@@ -1,0 +1,8 @@
+packages:
+  - gcc-arm-none-eabi
+  - libnewlib-arm-none-eabi
+  - qemu-system
+
+runcmd:
+  - [ mkdir, /etc/qemu-binfmt ]
+  - [ ln, -s, /usr/arm-linux-gnueabi/, /etc/qemu-binfmt/arm ]
